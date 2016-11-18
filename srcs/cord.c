@@ -6,7 +6,7 @@
 /*   By: cciobanu <cristian-ceban@mail.ru>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/10 19:30:52 by cciobanu          #+#    #+#             */
-/*   Updated: 2016/11/16 17:27:31 by cciobanu         ###   ########.fr       */
+/*   Updated: 2016/11/18 21:59:54 by cciobanu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,7 @@ t_block		*ft_xy(t_block *block)
 	{
 		block = ft_first_xy(block, block->tetri);
 		block = ft_sec_xy(block);
+		free(block->tetri);
 		block = block->next;
 	}
 	return (tmp);

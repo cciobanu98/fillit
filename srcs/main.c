@@ -6,7 +6,7 @@
 /*   By: cciobanu <cristian-ceban@mail.ru>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 13:58:26 by cciobanu          #+#    #+#             */
-/*   Updated: 2016/11/16 18:27:20 by cciobanu         ###   ########.fr       */
+/*   Updated: 2016/11/18 22:02:09 by cciobanu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ int		main(int argc, char **argv)
 	size = map_size(block);
 	block = ft_xy(block);
 	result = ft_result(block, size);
+	free(block);
 	while (*result)
 		ft_putendl(*result++);
 	return (0);

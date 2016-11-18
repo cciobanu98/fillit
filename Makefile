@@ -6,7 +6,7 @@
 #*   By: cciobanu <cristian-ceban@mail.ru>          +#+  +:+       +#+        *#
 #*                                                +#+#+#+#+#+   +#+           *#
 #*   Created: 2016/11/16 17:33:21 by cciobanu          #+#    #+#             *#
-#*   Updated: 2016/11/18 21:48:17 by cciobanu         ###   ########.fr       *#
+#*   Updated: 2016/11/18 21:56:39 by cciobanu         ###   ########.fr       *#
 #*                                                                            *#
 #* ************************************************************************** *#
 
@@ -17,9 +17,11 @@ COMP =gcc
 CC = gcc -Wall -Wextra -Werror
 RM = rm -f
 
-all : $(NAME)
-	@make -c ./libft
-	@$(CC) -c src/.c $(INCLUDES)
+all: $(NAME)
+
+$(NAME):
+	@make -C ./libft
+	@$(CC) -c srcs/*.c $(INCLUDES)
 	@gcc *.o libft/libft.a -o $(NAME)
 
 clean:

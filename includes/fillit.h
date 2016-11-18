@@ -6,13 +6,13 @@
 /*   By: cciobanu <cristian-ceban@mail.ru>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 13:53:28 by cciobanu          #+#    #+#             */
-/*   Updated: 2016/11/16 17:46:11 by cciobanu         ###   ########.fr       */
+/*   Updated: 2016/11/18 19:50:31 by cciobanu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FILLIT_H
 # define FILLIT_H
-# include "./includes/libft/libft.h"
+# include "./libft/libft.h"
 # include <stdlib.h>
 # include <unistd.h>
 # include <fcntl.h>
